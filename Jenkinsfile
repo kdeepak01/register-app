@@ -10,7 +10,8 @@ pipeline {
       steps {
         cleanWs()
       }
-
+    }
+    
     stage('Checkout From SCM') {
       steps {
         git branch: 'main', credentialsId: 'github', url: 'https://github.com/kdeepak01/register-app.git'
